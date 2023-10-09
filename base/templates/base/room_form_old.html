@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% extends 'main.html' %}
+{% block content %}
+
+<div>
+<!-- method POST для отправки данных на сервер
+     method GET для получения данных с сервера параметры запроса (например, данные формы) 
+     добавляются к URL в строке запроса
+     accept указывает принимаемые типы данных, action - действие -->
+    <form method="POST", action="" >
+        {% csrf_token %}
+        
+<!-- that's a dict so we can import this info just like variable without 'for' or any other func
+     (we catch it from base/views.py)
+     as_p - meaning wrapping every variable as paragraph -->
+        {{form.as_p}}
+
+<!-- отправка формы на сервер, type - является кнопкой отправки данных, value - задает значение, которое 
+     будет отправлено на сервер вместе с именем элемента формы при нажатии кнопки -->
+        <input type = "submit", value="Submit">
+        </form>
+</div>
+
+{% endblock content %}
