@@ -4,21 +4,12 @@ Project can only be run on a local machine.
 * First you need to clone project:
 
 ```bash
-$ git clone https://github.com/Diazord/forum_platform "your_folder"
+$ git clone https://github.com/Diazord/forum_platform
 ```
 
-* Secondary make sure you're in project folder:
+Secondary go in project folder:
 ```bash
-$ pwd
-
-Path
-----
-C:\your\project\"your_folder"
-```
-
-If you're not here, just use:
-```bash
-$ cd "your_folder"
+$ cd forum_platform
 ```
 
 * After that you should do migrations:
